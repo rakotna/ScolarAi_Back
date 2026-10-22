@@ -5,7 +5,7 @@
 **ScolarAI** est une API backend Python haute performance dédiée à l'automatisation de la reconnaissance optique de caractères (OCR) sur les bulletins scolaires. Elle utilise des modèles d'intelligence artificielle de pointe pour détecter et extraire les informations textuelles des documents scolaires avec une grande précision.
 
 ### Technologies Clés
-- **YOLO OBB** : Détection orientée des zones de texte
+- **docTR** : Détection orientée des zones de texte
 - **TrOCR** : Reconnaissance optique de caractères transformateur
 - **FastAPI** : Framework web async haute performance
 - **Ngrok** : Tunnel public pour accès à distance
