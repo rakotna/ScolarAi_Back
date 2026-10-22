@@ -17,7 +17,7 @@
 | Endpoint | Méthode | Description |
 |----------|---------|-------------|
 | `/status` | GET | Vérifier l'état de l'API |
-| `/detect` | POST | Détection YOLO OBB des zones de texte |
+| `/detect` | POST | Détection docTr des zones de texte |
 | `/ocr` | POST | Reconnaissance optique (TrOCR) |
 | `/save` | POST | Sauvegarde des corrections sur Google Drive |
 | `/export/json` | GET | Export des données en JSON |
@@ -77,7 +77,7 @@ ScolarAi_Back/
 │   └── dataset.py         # Gestion des jeux de données
 ├── routes/
 │   ├── status.py          # Endpoint /status
-│   ├── detect.py          # Endpoint /detect (YOLO OBB)
+│   ├── detect.py          # Endpoint /detect (docTR)
 │   ├── ocr.py             # Endpoint /ocr (TrOCR)
 │   ├── save.py            # Endpoint /save (Google Drive)
 │   ├── export.py          # Endpoints /export/*
@@ -163,7 +163,7 @@ app.add_middleware(
 
 ## 🤖 Modèles IA
 
-### YOLO OBB (You Only Look Once - Oriented Bounding Box)
+### docTR
 - Détecte et localise les zones de texte orientées
 - Entraîné sur des images de bulletins scolaires
 - Sortie : coordonnées et angles des boîtes de détection
